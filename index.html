@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GlowFit APK Download</title>
+  <meta name="description" content="تحميل تطبيق GlowFit للأندرويد">
+  <style>
+    :root{
+      --bg:#eef8f7;
+      --card:#ffffff;
+      --text:#19303a;
+      --muted:#59717b;
+      --teal:#2a9d8f;
+      --red:#e76f51;
+      --gold:#f4a261;
+      --line:#d7ebe7;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial,"Segoe UI",Tahoma,sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(42,157,143,.10), transparent 28%),
+        radial-gradient(circle at bottom left, rgba(244,162,97,.10), transparent 24%),
+        var(--bg);
+      color:var(--text);
+    }
+    .wrap{max-width:1180px;margin:0 auto;padding:32px 20px 56px}
+    .hero{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:28px;
+      align-items:center;
+      margin-bottom:26px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid rgba(25,48,58,.08);
+      border-radius:28px;
+      box-shadow:0 18px 40px rgba(25,48,58,.08);
+    }
+    .hero-copy{padding:36px}
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      margin-bottom:18px;
+    }
+    .brand img{width:68px;height:68px;border-radius:18px}
+    .brand-name{font-size:44px;font-weight:800;line-height:1;direction:ltr}
+    .tag{font-size:16px;color:var(--teal);font-weight:700;margin-top:4px}
+    h1{
+      margin:0 0 12px;
+      font-size:42px;
+      line-height:1.15;
+    }
+    .lead{
+      margin:0 0 22px;
+      font-size:20px;
+      line-height:1.6;
+      color:var(--muted);
+    }
+    .cta-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      margin-bottom:18px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      min-height:54px;
+      padding:0 22px;
+      border-radius:16px;
+      text-decoration:none;
+      font-weight:800;
+      font-size:18px;
+      transition:transform .15s ease, box-shadow .15s ease;
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn.primary{background:var(--teal);color:#fff;box-shadow:0 14px 28px rgba(42,157,143,.22)}
+    .btn.secondary{background:#f7fbfb;color:var(--text);border:1px solid var(--line)}
+    .meta{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:12px;
+      margin-top:18px;
+    }
+    .meta .item{
+      background:#f9fcfc;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:14px 16px;
+      text-align:center;
+    }
+    .meta .value{display:block;font-size:24px;font-weight:800;color:var(--teal);direction:ltr}
+    .meta .label{display:block;margin-top:4px;color:var(--muted);font-size:14px}
+    .phone-stack{
+      position:relative;
+      min-height:560px;
+      padding:20px;
+      overflow:hidden;
+      background:linear-gradient(135deg, rgba(42,157,143,.10), rgba(244,162,97,.08));
+    }
+    .phone{
+      position:absolute;
+      width:220px;
+      height:470px;
+      border-radius:28px;
+      overflow:hidden;
+      background:#fff;
+      border:8px solid #fff;
+      box-shadow:0 18px 36px rgba(25,48,58,.18);
+    }
+    .phone img{width:100%;height:100%;object-fit:cover}
+    .p1{right:58px;top:48px;transform:rotate(-5deg)}
+    .p2{left:122px;top:78px;transform:rotate(4deg);z-index:2}
+    .p3{right:198px;bottom:38px;transform:rotate(-2deg);z-index:1}
+    .section{
+      padding:28px;
+      margin-top:22px;
+    }
+    .section h2{
+      margin:0 0 18px;
+      font-size:32px;
+    }
+    .features{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:14px;
+    }
+    .feature{
+      border:1px solid var(--line);
+      background:#fbfefe;
+      border-radius:20px;
+      padding:18px 18px 16px;
+    }
+    .feature .title{
+      font-size:20px;
+      font-weight:800;
+      margin-bottom:8px;
+      color:var(--text);
+    }
+    .feature p{
+      margin:0;
+      color:var(--muted);
+      line-height:1.6;
+      font-size:16px;
+    }
+    .install{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:14px;
+      margin-top:14px;
+    }
+    .step{
+      border-radius:20px;
+      border:1px solid var(--line);
+      background:#fff;
+      padding:18px;
+    }
+    .num{
+      width:34px;
+      height:34px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:var(--red);
+      color:#fff;
+      font-weight:800;
+      margin-bottom:10px;
+    }
+    .step h3{margin:0 0 8px;font-size:18px}
+    .step p{margin:0;color:var(--muted);line-height:1.55}
+    .checksum{
+      margin-top:16px;
+      padding:14px 16px;
+      border-radius:18px;
+      background:#f7fbfb;
+      border:1px solid var(--line);
+      direction:ltr;
+      font-family:Consolas,monospace;
+      overflow-wrap:anywhere;
+      color:#35515c;
+      font-size:14px;
+    }
+    .footer{
+      margin-top:28px;
+      text-align:center;
+      color:var(--muted);
+      font-size:14px;
+    }
+    @media (max-width: 980px){
+      .hero{grid-template-columns:1fr}
+      .phone-stack{min-height:680px}
+      .features,.install,.meta{grid-template-columns:1fr}
+      .brand-name{font-size:36px}
+      h1{font-size:34px}
+    }
+    @media (max-width: 640px){
+      .wrap{padding:18px 14px 40px}
+      .hero-copy,.section{padding:22px}
+      .phone{width:170px;height:360px}
+      .p1{right:18px;top:46px}
+      .p2{left:38px;top:92px}
+      .p3{right:96px;bottom:34px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="card hero-copy">
+        <div class="brand">
+          <img src="assets/glowfit-logo.png" alt="GlowFit logo">
+          <div>
+            <div class="brand-name">GlowFit</div>
+            <div class="tag">Your health, strength, activity</div>
+          </div>
+        </div>
+        <h1>حمّل تطبيق GlowFit للأندرويد</h1>
+        <p class="lead">منصة رقمية جزائرية للصحة، التغذية، والرياضة. هذا الرابط مخصص للتحميل المباشر المجاني بصيغة APK.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="https://github.com/brahimkedjar/glowfit-download/releases/latest/download/GlowFit-latest.apk">تحميل APK</a>
+          <a class="btn secondary" href="https://github.com/brahimkedjar/glowfit-download/releases">صفحة الإصدارات</a>
+        </div>
+        <div class="meta">
+          <div class="item">
+            <span class="value">v1.0.0</span>
+            <span class="label">الإصدار المنشور</span>
+          </div>
+          <div class="item">
+            <span class="value">57.6 MB</span>
+            <span class="label">حجم ملف APK</span>
+          </div>
+          <div class="item">
+            <span class="value">Android</span>
+            <span class="label">نظام التشغيل</span>
+          </div>
+        </div>
+      </div>
+      <div class="card phone-stack">
+        <div class="phone p1"><img src="assets/screen-1.png" alt="GlowFit screen 1"></div>
+        <div class="phone p2"><img src="assets/screen-2.png" alt="GlowFit screen 2"></div>
+        <div class="phone p3"><img src="assets/screen-3.png" alt="GlowFit screen 3"></div>
+      </div>
+    </section>
+
+    <section class="card section">
+      <h2>ماذا يقدم التطبيق؟</h2>
+      <div class="features">
+        <div class="feature">
+          <div class="title">خطط غذائية مخصصة</div>
+          <p>تنظيم الوجبات والمتابعة اليومية بما يناسب أهداف المستخدم الصحية ونمط حياته.</p>
+        </div>
+        <div class="feature">
+          <div class="title">برامج رياضية وتمارين</div>
+          <p>محتوى تدريبي يساعد على النشاط البدني اليومي، اللياقة، والالتزام المستمر.</p>
+        </div>
+        <div class="feature">
+          <div class="title">تتبع الوزن والسعرات</div>
+          <p>متابعة المؤشرات الأساسية مثل الوزن، الماء، الوجبات، والسعرات بطريقة منظمة.</p>
+        </div>
+        <div class="feature">
+          <div class="title">واجهة عربية سهلة</div>
+          <p>تجربة استخدام واضحة ومناسبة للمستخدم المحلي مع شاشات جاهزة للمتابعة اليومية.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card section">
+      <h2>طريقة التثبيت</h2>
+      <div class="install">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>حمّل الملف</h3>
+          <p>اضغط على زر <b>تحميل APK</b> وانتظر حتى ينتهي تنزيل الملف على هاتفك.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>اسمح بالتثبيت</h3>
+          <p>إذا ظهر تحذير من أندرويد، فعّل خيار تثبيت التطبيقات من هذا المصدر مرة واحدة.</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>افتح ملف APK</h3>
+          <p>من مدير الملفات أو من الإشعار، افتح الملف ثم اضغط <b>Install</b>.</p>
+        </div>
+        <div class="step">
+          <div class="num">4</div>
+          <h3>ابدأ الاستخدام</h3>
+          <p>بعد اكتمال التثبيت، افتح GlowFit وابدأ إعداد ملفك الصحي.</p>
+        </div>
+      </div>
+      <div class="checksum">SHA-256: 17242a84a9d2fb27c28846780d501a214eff5ef59a3f8a334a2bceb5f15eb7de</div>
+    </section>
+
+    <div class="footer">
+      Published by brahimkedjar on GitHub Pages
+    </div>
+  </div>
+</body>
+</html>
