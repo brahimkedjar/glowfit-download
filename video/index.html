@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GlowFit Video Presentation</title>
+  <meta name="description" content="فيديو العرض الحقيقي لتطبيق GlowFit">
+  <style>
+    :root{
+      --bg:#eef8f7;
+      --card:#ffffff;
+      --text:#19303a;
+      --muted:#59717b;
+      --teal:#2a9d8f;
+      --red:#e76f51;
+      --gold:#f4a261;
+      --line:#d7ebe7;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial,"Segoe UI",Tahoma,sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(42,157,143,.10), transparent 28%),
+        radial-gradient(circle at bottom left, rgba(244,162,97,.10), transparent 24%),
+        var(--bg);
+      color:var(--text);
+    }
+    .wrap{max-width:1220px;margin:0 auto;padding:28px 18px 40px}
+    .hero{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:22px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid rgba(25,48,58,.08);
+      border-radius:28px;
+      box-shadow:0 18px 40px rgba(25,48,58,.08);
+    }
+    .top{
+      padding:30px 30px 24px;
+      text-align:center;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:14px;
+      margin-bottom:14px;
+    }
+    .brand img{width:64px;height:64px;border-radius:18px}
+    .brand-name{font-size:42px;font-weight:800;line-height:1;direction:ltr}
+    .tag{font-size:16px;color:var(--teal);font-weight:700;margin-top:4px}
+    h1{
+      margin:0 0 10px;
+      font-size:40px;
+      line-height:1.18;
+    }
+    .lead{
+      max-width:900px;
+      margin:0 auto;
+      color:var(--muted);
+      font-size:19px;
+      line-height:1.65;
+    }
+    .cta-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      justify-content:center;
+      margin-top:22px;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:54px;
+      padding:0 22px;
+      border-radius:16px;
+      text-decoration:none;
+      font-weight:800;
+      font-size:18px;
+      transition:transform .15s ease, box-shadow .15s ease;
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn.primary{background:var(--teal);color:#fff;box-shadow:0 14px 28px rgba(42,157,143,.22)}
+    .btn.secondary{background:#f7fbfb;color:var(--text);border:1px solid var(--line)}
+    .player{
+      padding:18px;
+    }
+    .video-shell{
+      border-radius:24px;
+      overflow:hidden;
+      background:#081b1f;
+      box-shadow:0 18px 40px rgba(25,48,58,.12);
+    }
+    video{
+      width:100%;
+      display:block;
+      background:#081b1f;
+      max-height:78vh;
+    }
+    .info{
+      display:grid;
+      grid-template-columns:1.1fr .9fr;
+      gap:18px;
+      margin-top:22px;
+    }
+    .info-card{
+      padding:22px 24px;
+    }
+    .info-card h2{
+      margin:0 0 12px;
+      font-size:28px;
+    }
+    .info-card p{
+      margin:0;
+      color:var(--muted);
+      font-size:17px;
+      line-height:1.7;
+    }
+    .mini-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px;
+      margin-top:16px;
+    }
+    .mini{
+      background:#f8fcfb;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:16px;
+      text-align:center;
+    }
+    .mini .value{display:block;color:var(--teal);font-size:24px;font-weight:800;direction:ltr}
+    .mini .label{display:block;margin-top:6px;color:var(--muted);font-size:14px}
+    .frame{
+      border-radius:22px;
+      overflow:hidden;
+      border:1px solid var(--line);
+      background:#f8fcfb;
+      height:100%;
+      min-height:260px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .frame img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .footer{
+      margin-top:26px;
+      text-align:center;
+      color:var(--muted);
+      font-size:14px;
+    }
+    @media (max-width: 900px){
+      .info{grid-template-columns:1fr}
+      h1{font-size:34px}
+      .brand-name{font-size:36px}
+    }
+    @media (max-width: 640px){
+      .wrap{padding:18px 12px 30px}
+      .top,.info-card{padding:22px 18px}
+      .mini-grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="card top">
+        <div class="brand">
+          <img src="../assets/glowfit-logo.png" alt="GlowFit logo">
+          <div>
+            <div class="brand-name">GlowFit</div>
+            <div class="tag">Video Presentation</div>
+          </div>
+        </div>
+        <h1>فيديو العرض الحقيقي لتطبيق GlowFit</h1>
+        <p class="lead">هذه الصفحة تعرض تسجيلًا حقيقيًا للتطبيق أثناء التشغيل حتى يكون الوصول إلى الفيديو مباشرًا وواضحًا من دون صفحة GitHub التي لا تعاين الملفات الكبيرة بشكل جيد.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="../assets/glowfit_presentation_real_app.mp4">فتح ملف الفيديو مباشرة</a>
+          <a class="btn secondary" href="../">الرجوع إلى صفحة تحميل التطبيق</a>
+        </div>
+      </div>
+
+      <div class="card player">
+        <div class="video-shell">
+          <video controls preload="metadata" playsinline poster="../assets/glowfit_real_footage_photo_presentation.png">
+            <source src="../assets/glowfit_presentation_real_app.mp4" type="video/mp4">
+            المتصفح لا يدعم تشغيل الفيديو المضمن.
+          </video>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="card info-card">
+          <h2>ماذا يعرض الفيديو؟</h2>
+          <p>الفيديو يمر عبر الواجهات الأساسية للتطبيق مثل الصفحة الرئيسية، التغذية، الرياضة، والمتابعة الصحية، ويعرض تجربة الاستخدام الفعلية كما تظهر على الهاتف.</p>
+          <div class="mini-grid">
+            <div class="mini">
+              <span class="value">MP4</span>
+              <span class="label">صيغة الفيديو</span>
+            </div>
+            <div class="mini">
+              <span class="value">21.8 MB</span>
+              <span class="label">الحجم التقريبي</span>
+            </div>
+          </div>
+        </div>
+        <div class="card info-card">
+          <div class="frame">
+            <img src="../assets/glowfit_real_app_contact_sheet.png" alt="GlowFit app frames">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">Published by brahimkedjar on GitHub Pages</div>
+  </div>
+</body>
+</html>
